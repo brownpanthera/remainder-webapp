@@ -6,9 +6,9 @@ const App = ()=>{
 
   return(
     <main>
-    <h2>Get notified and don't ever miss your reminders.</h2>
+    <h2>Get notified and never miss your reminders.</h2>
       <form className='form'>
-        <input className='form-input' type='text' placeholder='your remainder!' />
+        <input className='form-input' type='text' placeholder='your reminder!' />
         <div className='calender'>
       <Calendar/>
       </div>
