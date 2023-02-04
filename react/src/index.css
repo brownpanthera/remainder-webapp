@@ -12,6 +12,7 @@ h2 {
   display: grid;
   justify-content: center;
   align-items: center;
+  margin: 2rem;
 }
 
 .form-input {
@@ -22,4 +23,35 @@ h2 {
   border-radius: 5px;
   text-indent: 10px;
   font-size: 16px;
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.form-button {
+  align-items: center;
+  background-color: #292929;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  font-family: 'Spectral';
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  width: 100px;
+  padding: 6px;
+}
+
+.form-button:hover{
+    background-color: rgb(36, 36, 36);
+    color: #ffff;
+}
+
+.calender{
+ margin: 25px;
 }
