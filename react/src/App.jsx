@@ -1,21 +1,34 @@
 import React, { useState } from 'react';
 import { Calendar } from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import {motion} from 'framer-motion';
+import {FaUserAlt} from 'react-icons/fa'
+
 
 const App = ()=>{
 
+  
+  // Function for choosing current date
+  const [selectedDate, setSelectedDate] = useState(new Date());
+  function handleChange(date) {
+    setSelectedDate(date);
+    console.log("Selected date: ", date);
+  }
+
   return(
     <main>
-    <h2>Get notified and never miss your reminders.</h2>
+    <motion.h1 animate={{y: -0}} initial={{y: -300}}>Get notified and never miss your reminders.</motion.h1>
+    <h3><FaUserAlt size={25}/></h3>
+    
       <form className='form'>
-        <input className='form-input' type='text' placeholder='your reminder!' />
+        <input className='form-input' type='text' placeholder='Your Reminder !' />
         <div className='calender'>
-      <Calendar/>
+      <Calendar onChange={handleChange} value={selectedDate}/>
       </div>
-      </form>
-      <div className='button-div'>
       <button className='form-button'>ADD</button>
-      </div>
+      </form>
+      {/* <div className='button-div'>
+      </div> */}
     </main>
   )
 }
