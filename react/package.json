@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.7.1",
     "framer-motion": "^9.0.2",
     "react": "^18.2.0",
     "react-calendar": "^4.0.0",

@@ -4,6 +4,7 @@ import 'react-calendar/dist/Calendar.css';
 import {motion} from 'framer-motion';
 import {FaUserAlt} from 'react-icons/fa'
 
+import { createClient } from '@supabase/supabase-js';
 
 const App = ()=>{
 
@@ -26,6 +27,7 @@ const App = ()=>{
       <Calendar onChange={handleChange} value={selectedDate}/>
       </div>
       <button className='form-button'>ADD</button>
+      <h2>{selectedDate.toDateString()}</h2>
       </form>
       {/* <div className='button-div'>
       </div> */}
